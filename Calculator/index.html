@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      width: 50%;
+      margin: auto;
+    }
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      text-align: center;
+    }
+    .btn, .eq {
+      width: 23%;
+      background-color: darkcyan;
+      cursor: pointer;
+    }
+    .top {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    .dis {
+      height: auto;
+      width: 72.5%;
+      background-color: rgb(196, 196, 196);
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="top">
+      <div class="dis" id="dis"></div>
+      <div class="eq" id="eq" onclick="eqClick()">=</div>
+    </div>
+    <div class="btns">
+      <div class="btn" onclick="inputClick('1')">1</div>
+      <div class="btn" onclick="inputClick('2')">2</div>
+      <div class="btn" onclick="inputClick('3')">3</div>
+      <div class="btn" onclick="inputClick('+')">+</div>
+
+      <div class="btn" onclick="inputClick('4')">4</div>
+      <div class="btn" onclick="inputClick('5')">5</div>
+      <div class="btn" onclick="inputClick('6')">6</div>
+      <div class="btn" onclick="inputClick('-')">-</div>
+
+      <div class="btn" onclick="inputClick('7')">7</div>
+      <div class="btn" onclick="inputClick('8')">8</div>
+      <div class="btn" onclick="inputClick('9')">9</div>
+      <div class="btn" onclick="inputClick('*')">*</div>
+
+      <div class="btn" onclick="inputClick('c')">c</div>
+      <div class="btn" onclick="inputClick('0')">0</div>
+      <div class="btn" onclick="inputClick('.')">.</div>
+      <div class="btn" onclick="inputClick('/')">/</div>
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>

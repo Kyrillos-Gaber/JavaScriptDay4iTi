@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <form action="get">
+    <input type="text" placeholder="Full name" required onfocus="enter(this)" onblur="leaving(this)" id="name" name="name">
+    <small id="nEr" style="display: none; color: red;">invalid name</small>
+    <br>
+    <br>
+    <input type="email" placeholder="Email" required>
+    <br>
+    <br>
+    <select name="cities" id="cty">
+      <option value="Cairo">Cairo</option>
+      <option value="Alex">Alex</option>
+      <option value="Aswan">Aswan</option>
+      <option value="Assiut">Assiut</option>
+    </select>
+    <br>
+    <br>
+    <input type="password" placeholder="Password" required id="pass" onblur="weakPass(this)">
+    <input type="password" placeholder="Repeat password" required id="rePass" onblur="leavePass(this)">
+    <small id="passErr" style="display: none; color: red;">too short password or password and repeat password should be the same</small>
+    <br>
+    <br>
+    <input type="checkbox"><span>I accept</span>
+    <br>
+    <br>
+    <input type="button" value="Reiser" disabled>
+  </form>
+</body>
+<script src="./index.js"></script>
+</html>
